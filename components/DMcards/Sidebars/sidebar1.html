@@ -1,0 +1,44 @@
+<div class="flex items-center justify-evenly flex-col p-4 rounded-lg space-y-4 w-1/4 ">
+    <!-- Example Sidebar Icons/Links -->
+    <a href="#" class=""></a>
+
+        
+    <a href="#" class="text-white text-sm flex items-center rounded-full space-x-2 cursor-pointer sidebar-link">
+        <span class="text-xl">🏠</span>
+        <!-- <span class="hidden md:flex">Home</span> -->
+      </a>
+  
+    <a href="#" class="text-white text-sm flex items-center rounded-full space-x-2 cursor-pointer sidebar-link">
+      <span class="text-xl">📊</span>
+      <!-- <span class="hidden md:flex">Analytics</span> -->
+    </a>
+  
+    <a href="#" class="text-white text-sm flex items-center rounded-full space-x-2 cursor-pointer sidebar-link">
+      <span class="text-xl">📦</span>
+      <!-- <span class="hidden md:flex">Inventory</span> -->
+    </a>
+  
+    <a href="#" class="text-white text-sm flex items-center rounded-full space-x-2 cursor-pointer sidebar-link">
+      <span class="text-xl">⚙</span>
+      <!-- <span class="hidden md:flex">Settings</span> -->
+    </a>
+  </div>
+<style>
+    /* Styling for the sidebar links */
+    .sidebar-link {
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: transparent; /* Ensure no other background is overriding */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-link:active,
+.sidebar-link:focus {
+  background-color: white !important; /* Force the background to change on click */
+  color: black !important; /* Force the text color */
+}
+
+
+</style>  

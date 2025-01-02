@@ -1,0 +1,68 @@
+<!-- nav1.html -->
+ <nav>
+<div class="flex items-center justify-between w-full">
+  <!-- Left section (Icon + Title) -->
+  <div class="flex items-center space-x-2">
+    <!-- Icon (Placeholder for Hourglass Icon) -->
+    <div class="text-white text-3xl">
+      ⌛ <!-- Hourglass icon -->
+    </div>
+    <!-- Inventory Title -->
+    <span id="navbar-title" class="text-white text-2xl font-bold">Inventory</span>
+  </div>
+
+  <!-- Middle section (Storage Information with Hover Dropdown) -->
+  <div class="relative flex items-center justify-center space-x-4">
+    <!-- Storage Info Container (with dropdown arrow and hover dropdown) -->
+    <div id="storage-info" class="md:flex items-center rounded-full p-2 cursor-pointer relative group hidden">
+      <span class="text-white text-sm">🏠</span>
+      <span class="text-white text-sm ml-2">Storage:</span>
+      <span class="text-white text-sm ml-1" id="storage-info-text">51 Port Terminal Blvd #12, Bayonne, NJ</span>
+
+      <!-- Dropdown arrow for storage info -->
+      <div class="ml-1">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+
+      <!-- Dropdown Menu (Visible on hover) -->
+    </div>
+  </div>
+
+  <!-- Right section (Month Selector with Hover Dropdown + Icons) -->
+  <div class="flex items-center space-x-4">
+    <!-- Month Selector Dropdown -->
+    <div class="relative max-[315px]:hidden flex">
+      <select id="month-select" class="text-white bg-[rgba(0,0,0,0)] rounded-full px-4 py-2  appearance-none focus:outline-none ">
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+      </select>
+      <!-- Dropdown arrow for month selector -->
+      <div class="absolute inset-y-0 right-0 flex items-center px-2 text-white pointer-events-none">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Icon Buttons -->
+    <div class="text-white bg-gray-700 p-2 rounded-full">
+      🏷️
+    </div>
+    <div class="text-white bg-gray-700 p-2 rounded-full">
+      ⚙️
+    </div>
+  </div>
+</div>
+</nav>

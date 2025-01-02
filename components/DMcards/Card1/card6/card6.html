@@ -1,0 +1,43 @@
+<div class="relative bg-[--main-bg] w-[300px] lg:w-[500px] p-6 rounded-xl shadow-xl overflow-hidden">
+        
+    <!-- Background Map -->
+
+    <!-- Content with Flexbox (Flex Column) -->
+    <div class="relative z-10 flex flex-col space-y-2">
+        <!-- Title -->
+        <div class="text-lg font-semibold text-gray-700">Logistics</div>
+        <!-- Delivery status -->
+        <div class="text-sm text-gray-600">Delivery is delayed</div>
+
+        <!-- Delayed items (Image Gallery) -->
+        <div class="flex space-x-2 items-center mb-4">
+            <!-- Example item images -->
+            <img src="https://via.placeholder.com/40" alt="item 1" class="w-12 h-12 rounded-md object-cover">
+            <img src="https://via.placeholder.com/40" alt="item 2" class="w-12 h-12 rounded-md object-cover">
+            <img src="https://via.placeholder.com/40" alt="item 3" class="w-12 h-12 rounded-md object-cover">
+            <div class="flex items-center justify-center w-12 h-12 rounded-md bg-gray-300">
+                <span class="text-sm text-gray-700">+32</span>
+            </div>
+        </div>
+
+        <!-- Map with Dotted Line, Markers, and Delay -->
+        <div class="relative h-[120px]">
+            <!-- Curved Dotted Line using SVG -->
+            <svg class="absolute inset-0 w-full h-full" viewBox="0 0 500 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 80 80 Q 250 180 420 80" stroke="gray" stroke-width="3" stroke-dasharray="5,5" fill="transparent"/>
+            </svg>
+            
+            <!-- Left marker (origin) -->
+            <div class="absolute w-8 h-8 bg-yellow-400 rounded-full border-2 border-gray-700 top-[55%] left-[12%]"></div>
+
+            <!-- Right marker (destination) -->
+            <div class="absolute w-8 h-8 bg-orange-500 rounded-full border-2 border-gray-700 top-[55%] right-[12%]"></div>
+
+            <!-- Delay button in the middle of the U-shape -->
+            <div class="absolute top-[70px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white py-1 px-3 rounded-full font-semibold">
+                Delay +2d
+            </div>
+        </div>
+    </div>
+</div>
+</div>
